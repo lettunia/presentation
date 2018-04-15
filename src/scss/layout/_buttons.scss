@@ -1,0 +1,21 @@
+.btn {
+  background-color: $button-bg-color;
+  color: $button-color;
+  font-size: $button-font-size;
+  outline: 0;
+  border: 1px solid darken($button-bg-color, 10%);
+  transition: background-color .3s;
+  font-family: 'BebasNeue Regular';
+
+  &:hover {
+    transition: background-color .3s;
+    background-color: darken($button-bg-color, 10%);
+  }
+
+  &:active {
+    outline: 2px solid rgba(lighten($button-bg-color, 10%), 0.5);
+
+    transition: background-color .3s;
+    background-color: darken($button-bg-color, 16%);
+  }
+}

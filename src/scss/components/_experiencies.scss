@@ -1,0 +1,14 @@
+.experiences {
+  .experience {
+    width: 100%;
+    border: 2px solid $border-color;
+
+    > .content {
+      margin: 8px;
+      background-color: $experience-bg-color;
+      font-family: 'CaviarDreams';
+      font-size: 21px;
+      text-align: center;
+    }
+  }
+}

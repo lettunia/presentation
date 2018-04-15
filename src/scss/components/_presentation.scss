@@ -1,0 +1,11 @@
+.presentation {
+  .layer {
+    display: none;
+
+    &.layer-active {
+      display: block;
+
+      animation: fadeIn 1.5s;
+    }
+  }
+}

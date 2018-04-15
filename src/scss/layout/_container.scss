@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: $content-width;
+  height: $content-height;
+  margin: 0 auto;
+  outline: 1px solid $outline-color;
+  overflow: hidden;
+
+  > .content {
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0 0 10px;
+    font-weight: normal;
+    font-size: 42.09px;
+  }
+
+  .letty {
+    position: absolute;
+    bottom: -$letty-outside;
+    right: -$letty-outside;
+  }
+}

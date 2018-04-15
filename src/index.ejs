@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %><link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"><% } %>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-leaf"></div>
+        <div class="letty"></div>
+        <main class="content presentation">
+            <h1>YO SOY <br/> LETTY VILLAMIZAR</h1>
+            <section class="experiences">
+                <article class="experience layer" id="experience-1">
+                    <div class="content">
+                        Se me presentó una oportunidad donde la habilidad requerida era AngularJs pero se me asignó
+                        un proyecto en ReactJs y no dudé en aprenderlo con su stack completo.
+                    </div>
+                </article>
+                <article class="experience layer" id="experience-2">
+                    <div class="content">
+                        Cuando llegué a Chile, supe que podía tener una mejor calidad de vida que en mi país,
+                        que podría tener los resultados a las metas que me proponga. Desde entonces me enfoco
+                        en eso y en ayudar a mi familia.
+                    </div>
+                </article>
+            </section>
+            <section class="information layer" id="end">
+                <article class="greeting">
+                    <div class="content">
+                        Quiero formar parte de tu equipo
+                        <button class="btn" type="button">
+                            ¡Escribeme!
+                        </button>
+                    </div>
+                </article>
+                <nav class="information-links">
+                    <a href="#experience-1" class="link">Experiencia 1</a>
+                    <a href="#experience-2" class="link">Experiencia 2</a>
+                </nav>
+            </section>
+        </main>
+        <footer/>
+    </div>
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
+</body>
+</html>

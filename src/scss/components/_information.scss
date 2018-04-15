@@ -1,0 +1,25 @@
+.information {
+  margin-top: 40px;
+
+  .greeting {
+    border: 2px solid $border-color;
+    font-size: 21px;
+    > .content {
+      margin: 8px;
+
+      > .btn {
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  nav.information-links {
+    margin: 40px 0;
+    text-align: center;
+    > a {
+      display: block;
+    }
+  }
+}
