@@ -4,4 +4,8 @@ footer {
   bottom: 0;
   height: $footer-height;
   background-color: $footer-bg-color;
+
+  iframe {
+    margin: 20px;
+  }
 }

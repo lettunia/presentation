@@ -43,8 +43,12 @@
                 </nav>
             </section>
         </main>
-        <footer/>
+        <footer>
+            <a class="github-button" href="https://github.com/lettunia/presentation"
+               aria-label="View lettunia/presentation on GitHub">Github</a>
+        </footer>
     </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
 </body>
 </html>
